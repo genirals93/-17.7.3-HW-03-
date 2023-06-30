@@ -1,0 +1,9 @@
+money = int(input("Пожалуйста,введите сумму, которую планируется положить под проценты:"))
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+TKB = int((per_cent['TKB']) * (money / 100000))
+SKB = int((per_cent['SKB']) * (money / 100000))
+VTB = int((per_cent['VTB']) * (money / 100000))
+SBER = int((per_cent['SBER']) * (money / 100000))
+deposit = [TKB, SKB, VTB, SBER]
+print("Накопленные средства за год вклада в каждый из банков =", deposit)
+print("Максимальная сумма, которую вы можете заработать:", max(deposit))
